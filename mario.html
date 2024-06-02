@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+           background-image: url(land.png);
+           background-size: 100% 100%;
+           height: 100vh;
+           width: 100%;
+        }
+        div{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background-image: url(mario\ 1.png);
+            background-size: 100% 100%;
+            bottom: 8.7%;
+            animation: run 2s linear infinite, run1 3s linear infinite;
+            
+        }
+        @keyframes run{
+            0%{
+                background-image: url(mario\ 2.png);
+            }
+            20%{
+                background-image: url(mario\ 3.png);
+            }
+            40%{
+                background-image: url(mario\ 4.png);
+            }
+            60%{
+                background-image: url(mario\ 5.png);
+            }
+            80%{
+                background-image: url(mario\ 6.png);
+            }
+            100%{
+                background-image: url(mario\ 7.png);
+            }
+            
+
+        }
+        @keyframes run1{
+            0%{
+                left:0%;
+            }
+            100%{
+                left:80%;
+            }
+        }
+    </style>
+    <div>
+
+    </div>
+</body>
+</html>
